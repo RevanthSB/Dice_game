@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>revanth</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .btn--new:active{
+        transform: translate(-12rem,-14.6rem);
+      }
+      .btn--hold:active{
+        transform: translate(-27.3rem, 2.6rem);
+      }
+      .btn--roll:active{
+        transform: translate(-20.1rem, 0.5px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="shadow1"></div>
+    <div class="shadow2"></div>
+    <main>
+      <div class="box">
+        <section class="player--0">
+          <p class="name name--0">PLAYER 1</p>
+          <p class="score" id="score--0">0</p>
+          <div class="current">
+            <p class="current-label">CURRENT</p>
+            <p class="current-score" id="current--0">0</p>
+          </div>
+        </section>
+        <section class="player--1">
+          <p class="name name--1">PLAYER 2</p>
+          <p class="score" id="score--1">0</p>
+          <div class="current">
+            <p class="current-label">CURRENT</p>
+            <p class="current-score" id="current--1">0</p>
+          </div>
+        </section>
+      </div>
+      <button class="btn--new">🔄 New game</button>
+      <button class="btn--roll">🎲 Roll dice</button>
+      <button class="btn--hold">📥 Hold</button>
+      <img src="dice-1.png" alt="" width="60px" height="60px" class="dice" />
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
